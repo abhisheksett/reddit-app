@@ -1,3 +1,4 @@
+import { User } from './entities/User';
 import { __prod__ } from './constants';
 import { Post } from "./entities/Post";
 import { MikroORM } from '@mikro-orm/core';
@@ -8,7 +9,7 @@ export default {
             path: path.join(process.cwd(), './src/migrations'),
             pattern: /^[\w-]+\d+\.[tj]s$/
         },
-        entities: [Post],
+        entities: [Post, User],
         dbName: 'lireddit',
         type: 'postgresql',
         user: 'postgres',

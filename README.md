@@ -18,4 +18,5 @@ A fullstack project that's kind of clone of reddit. It includes following techno
 
 - Install Postgres
 - Install Postgres cli
+- Install Redis
  
