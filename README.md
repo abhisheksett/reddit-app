@@ -13,6 +13,7 @@ A fullstack project that's kind of clone of reddit. It includes following techno
 - Next.js
 - TypeGraphQL
 - Chakra
+- Nodemailer
 
 ## Prerequisites
 
