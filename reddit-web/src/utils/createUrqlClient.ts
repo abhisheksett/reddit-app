@@ -24,7 +24,7 @@ import { isServer } from "./isServer";
 const errorExchange: Exchange = ({ forward }) => (ops$) => {
   return pipe(
     forward(ops$),
-    tap(({ error }) => {
+    tap(({ error }: any) => {
       if (error?.message.includes("not authenticated")) {
         Router.replace("/login");
       }
